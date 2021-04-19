@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Tlaset Grenade!</title>
+</head>
+<body>
+    <p>Логин:</p>
+    <input type="text" id="login">
+    <p>Пароль:</p>
+    <input type="password" id="password">
+    <button onclick="log_in()">Log In!</button>
+    <script type="text/javascript">
+        function log_in() {
+            var log = document.getElementById('login').value,
+            pass = document.getElementById('password').value;
+            if(log == "Tlaset" && pass == "grenade") {
+                location.replace("https://tlaset-grenade.herokuapp.com/verified")
+            }
+            else {
+            	if(log != "Tlaset" && pass == "grenade") 
+                	alert('Invalid Login!')
+                else if(log == "Tlaset" && pass != "grenade")
+                	alert('Invalid Password!')
+            }
+        }
+    </script>
+</body>
+</html>
