@@ -18,11 +18,11 @@
             }
             else {
             	if(log != "Tlaset" && pass == "grenade") 
-                	alert('Invalid Login!')
+                	alert('Invalid Login!');
                 else if(log == "Tlaset" && pass != "grenade")
-                	alert('Invalid Password!')
-                else
-                    alert('Invalid Login & Password!')
+                	alert('Invalid Password!');
+                else if(log != "Tlaset" && pass != "grenade")
+                    alert('Invalid Login & Password!');
             }
         }
     </script>
